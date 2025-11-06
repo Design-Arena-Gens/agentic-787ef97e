@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background-color: #0f172a;
+}
+
+body {
+  @apply bg-slate-950 text-slate-50 antialiased;
+}
+
+.glass {
+  @apply bg-slate-900/70 backdrop-blur-xl border border-slate-800/60 rounded-2xl shadow-card;
+}
+
+.section-title {
+  @apply text-sm font-semibold uppercase tracking-widest text-slate-400;
+}
+
+.pill {
+  @apply inline-flex items-center gap-1 rounded-full bg-slate-800/80 px-3 py-1 text-xs font-medium text-slate-300;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full bg-brand-500/10 px-2.5 py-1 text-xs font-semibold text-brand-300;
+}
